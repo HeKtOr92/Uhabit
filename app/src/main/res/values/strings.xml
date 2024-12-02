@@ -1,0 +1,52 @@
+<resources>
+    <!-- Application Name -->
+    <string name="app_name">Uhabit</string>
+
+    <!-- General Strings -->
+    <string name="welcome_message">Welcome to Uhabit, %1$s</string>
+    <string name="error_required">Required</string>
+    <string name="enter_name">Enter your name to start</string>
+    <string name="start_new_habit">Start New Habit</string>
+    <string name="save_button_text">Save</string>
+    <string name="save_habit_button_text">Save Habit</string>
+    <string name="total_habits_completed">Total Habits Completed: %1$d</string>
+    <string name="duration_hint">Duration (days)</string>
+
+    <!-- Dialog Strings -->
+    <string name="habit_name_hint">Habit Name</string>
+    <string name="habit_explanation_hint">Explanation of the Habit</string>
+    <string name="start_date_hint">Start Date (yyyy-MM-dd)</string>
+    <string name="reminder_time_hint">Reminder Time (HH:mm)</string>
+    <string name="hint_new_username">Enter new username</string>
+
+    <!-- Buttons -->
+    <string name="save_username">Save</string>
+    <string name="change_username">Change Username</string>
+    <string name="habit_history">Habit History</string>
+
+    <!-- Spinner Arrays -->
+    <string-array name="habit_categories">
+        <item>Health</item>
+        <item>Productivity</item>
+        <item>Learning</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="frequency_options">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <!-- Statistics Strings -->
+    <string name="statistics">Statistics</string>
+    <string name="total_days">Total Days: %1$d</string>
+    <string name="completed_days">Completed Days: %1$d</string>
+    <string name="skipped_days">Skipped Days: %1$d</string>
+    <string name="completion_percentage">Completion Percentage: %1$.2f%%</string>
+    <string name="current_streak">Current Streak: %1$d</string>
+    <string name="longest_streak">Longest Streak: %1$d</string>
+
+    <!-- Completed Days in Habit History -->
+    <string name="completed_days_history">Completed Days: %1$d</string>
+</resources>

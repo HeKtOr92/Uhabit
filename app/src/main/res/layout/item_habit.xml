@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/habitCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Habit Name -->
+        <TextView
+            android:id="@+id/habitNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Habit Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Habit Category -->
+        <TextView
+            android:id="@+id/habitCategoryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:layout_marginTop="4dp" />
+
+        <!-- Completion Count -->
+        <TextView
+            android:id="@+id/completionCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed 0 days"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/habitProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="50"
+            android:max="100"
+            android:layout_marginTop="8dp" />
+
+        <!-- New UI Elements -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <!-- Daily Completion Checkbox -->
+            <CheckBox
+                android:id="@+id/dailyCompleteCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed Today"
+                android:checked="false" />
+
+            <!-- Spacer -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <!-- Complete Habit Button -->
+            <Button
+                android:id="@+id/completeHabitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complete" />
+        </LinearLayout>
+
+        <!-- Habit Profile Button -->
+        <Button
+            android:id="@+id/habitProfileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Habit Profile"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

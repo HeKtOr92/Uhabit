@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Habit Name -->
+        <TextView
+            android:id="@+id/habitNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Habit Name"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Statistics -->
+        <TextView
+            android:id="@+id/statisticsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/statistics"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <!-- Total Days -->
+        <TextView
+            android:id="@+id/totalDaysTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_days"
+            android:layout_marginTop="8dp" />
+
+        <!-- Completed Days -->
+        <TextView
+            android:id="@+id/completedDaysTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/completed_days"
+            android:layout_marginTop="4dp" />
+
+        <!-- Skipped Days -->
+        <TextView
+            android:id="@+id/skippedDaysTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/skipped_days"
+            android:layout_marginTop="4dp" />
+
+        <!-- Completion Percentage -->
+        <TextView
+            android:id="@+id/completionPercentageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/completion_percentage"
+            android:layout_marginTop="4dp" />
+
+        <!-- Current Streak -->
+        <TextView
+            android:id="@+id/currentStreakTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_streak"
+            android:layout_marginTop="4dp" />
+
+        <!-- Longest Streak -->
+        <TextView
+            android:id="@+id/longestStreakTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/longest_streak"
+            android:layout_marginTop="4dp" />
+
+        <!-- Completed Today -->
+        <CheckBox
+            android:id="@+id/completedTodayCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed Today"
+            android:layout_marginTop="16dp" />
+
+        <!-- Calendar View -->
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/calendarRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:clipToPadding="false"
+            android:layout_margin="8dp"
+            android:scrollbars="vertical" />
+
+        <!-- Edit Habit Button -->
+        <Button
+            android:id="@+id/editHabitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Edit Habit" />
+
+    </LinearLayout>
+</ScrollView>
